@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profiles</title>
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        .contact-icons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .contact-icons a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .schedule-container.dark .icon {
+            filter: invert(1); /* Make icons white for dark background */
+        }
+
+        .schedule-container.yellow .icon {
+            filter: none; /* Keep icons black for yellow background */
+        }
+
+        .schedule-container.dark {
+            background-color: #333; /* Dark gray background */
+            color: white;          /* White text */
+        }
+
+        .schedule-container.yellow {
+            background-color: #ff0; /* Bright yellow background */
+            color: black;           /* Black text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Dept. of EEE</h1>
+            <h2>Student Profiles</h2>
+            <p>Unofficial Student Contact Database</p>
+            <p>If any data is wrong, please contact the CR.</p>
+            <a href="https://vu-eee.github.io/library" target="_blank">
+                <button id="reloadButton">Online Library</button>
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content" id="profiles">
+          <h2>From 1st Semesters</h2>
+            <div class="schedule-container dark">
+                <h3>ID: 101</h3>
+                <p>Name: Alice Smith</p>
+                <div class="contact-icons">
+                    <a href="tel:+1234567890" title="Call">
+                        <img src="https://www.svgrepo.com/download/533283/phone-call.svg" alt="Phone Icon" class="icon">
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/8.9.0/whatsapp.svg" alt="WhatsApp Icon" class="icon">
+                    </a>
+                    <a href="#" target="_blank" title="LinkedIn">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/8.9.0/linkedin.svg" alt="LinkedIn Icon" class="icon">
+                    </a>
+                    <a href="#" target="_blank" title="Facebook">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/8.9.0/facebook.svg" alt="Facebook Icon" class="icon">
+                    </a>
+                    <a href="mailto:alice@example.com" title="Email">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/8.9.0/gmail.svg" alt="Email Icon" class="icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="schedule-container yellow">
+                <h3>ID: 102</h3>
+                <p>Name: Bob Johnson</p>
+                <div class="contact-icons">
+                    <a href="tel:+0987654321" title="Call">
+                        <img src="https://www.svgrepo.com/download/533283/phone-call.svg" alt="Phone Icon" class="icon">
+                    </a>
+                    <a href="https://wa.me/0987654321" target="_blank" title="WhatsApp">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/8.9.0/whatsapp.svg" alt="WhatsApp Icon" class="icon">
+                    </a>
+                    <a href="#" target="_blank" title="LinkedIn">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/8.9.0/linkedin.svg" alt="LinkedIn Icon" class="icon">
+                    </a>
+                    <a href="#" target="_blank" title="Facebook">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/8.9.0/facebook.svg" alt="Facebook Icon" class="icon">
+                    </a>
+                    <a href="mailto:bob@example.com" title="Email">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/8.9.0/gmail.svg" alt="Email Icon" class="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Maintained by CR</p>
+        </div>
+    </div>
+</body>
+</html>
